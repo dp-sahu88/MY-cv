@@ -29,13 +29,15 @@ let callbackIntersectingPage = (entries, observer) => {
       let activeMenuItem = document.querySelector(".menu-item a.active");
       activeMenuItem.classList.remove("active");
       let newActiveMenuItem = document.querySelector(".menu-item a."+currentPage);
-      newActiveMenuItem.classList.add("active")
-      entry.target.children[0].classList.add("fade-in");
-      entry.target.children[1].classList.add("fade-in");
+      newActiveMenuItem.classList.add("active");
+      Array.from(entry.target.children).forEach(child => {
+        child.classList.add("fade-in");
+      })
     }
     if(entry.isIntersecting == false){
-      entry.target.children[0].classList.remove("fade-in");
-      entry.target.children[1].classList.remove("fade-in");
+      Array.from(entry.target.children).forEach(child => {
+        child.classList.remove("fade-in");
+      })
     }
 
   });
@@ -46,3 +48,11 @@ let observerIntersectingPage = new IntersectionObserver(callbackIntersectingPage
 Array.from(targets).forEach(target=>{
   observerIntersectingPage.observe(target);
 });
+
+//clicking on menu btn closes the menu
+let allMenuItem = document.querySelectorAll(".menu-item a");
+Array.from(allMenuItem).forEach(item=>{
+        item.addEventListener("click",()=>{
+        document.querySelector("#menu-check").checked= false;
+      })
+})
