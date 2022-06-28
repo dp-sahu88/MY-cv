@@ -782,8 +782,8 @@ footer {
 footer p{
   margin:20px 0;
   color:#585f6a;
-  /* display:block; */
-  /* text-align:center; */
+  display:block;
+  text-align:center;
 }
 
 footer .social{
