@@ -325,15 +325,7 @@ visibility: hidden;
   flex-flow: row wrap;
   justify-content:center;
 }
-.page1 .page-left::after{
-  content:"DEVIPRASAD";
-  position: absolute;
-  bottom: -2.6rem;
-  font-size:2.5rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight:700;
-  filter:brightness(.8);
-}
+
 .page1 .tile-box{
   background:none;
   border: none;
@@ -410,18 +402,7 @@ visibility: hidden;
     filter: brightness(0.65);
 } 
 @media(max-width:700px){
-  .page1 .page-left::after{
-    content:"";
-  }
-  .page1 .page-left::before{
-    content:"DEVIPRASAD";
-    position: absolute;
-    top: -2rem;
-    font-size:1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:700;
-    filter:brightness(.8);
-  }
+  
   .image-box-area{
     height: 35vh;
     width: 30vh;
@@ -698,13 +679,13 @@ visibility: hidden;
   color: var(--highlight-color);
   font-size:2rem;
 }
-#contacts .page-left form{
+.form-control{
   display: flex;
   flex-direction: column;
   align-items:center;
 }
-#contacts .page-left form input[type="text"],
-#contacts .page-left form input[type="email"]{
+.form-control input[type="text"],
+.form-control input[type="email"]{
   margin: 10px 0 20px 0;
   height:2.5em;
   width:40ch;
@@ -713,7 +694,7 @@ visibility: hidden;
   box-shadow: inset 3px 3px 5px rgb(160, 160, 160);
   padding:0 1.5rem 0 1.5rem;
 }
-#contacts .page-left form textarea{
+.form-control textarea{
   height:5rem;
   width:40ch;
   border-radius:15px;
@@ -723,7 +704,7 @@ visibility: hidden;
   padding:7px 14px 7px 14px;
   resize: none;
 }
-#contacts .page-left form input[type="submit"]{
+.form-control input[type="submit"]{
     width: 50%;
     height: 2rem;
     border-radius: 1rem;
@@ -732,7 +713,7 @@ visibility: hidden;
     border:none;
     box-shadow: inset 3px 3px 5px rgb(243, 242, 242), 3px 3px 4px black;
 }
-#contacts .page-left form input[type="submit"]:hover{
+.form-control input[type="submit"]:hover{
     box-shadow: inset 3px 3px 5px rgb(243, 242, 242), 1px 1px 2px black;
 }
 @media (max-width: 900px){
@@ -749,16 +730,16 @@ visibility: hidden;
   box-shadow: none;
   background:transparent;
 }
-#contacts .page-left form{
+.form-control{
   width:100%;
 }
-#contacts .page-left form input[type="text"],
-#contacts .page-left form input[type="email"]{
+.form-control input[type="text"],
+.form-control input[type="email"]{
   height:2rem;
   margin: 5px;
   width: 85%;
 }
-#contacts .page-left form textarea{
+.form-control textarea{
   height:2.5rem;
   margin: 5px;
   width: 85%;
@@ -773,7 +754,7 @@ visibility: hidden;
 .social{
   font-size:1.1rem;
 }
-#contacts .page-left form input[type="submit"]{
+.form-control input[type="submit"]{
   font-size:1rem;
   font-weight:normal;
 }
@@ -801,6 +782,8 @@ footer {
 footer p{
   margin:20px 0;
   color:#585f6a;
+  /* display:block; */
+  /* text-align:center; */
 }
 
 footer .social{
