@@ -54,7 +54,7 @@ body::-webkit-scrollbar{
   height: 40px;
   line-height: 40px;
   left: 20px;
-  position: absolute;
+  position: fixed;
   text-align: center;
   width: 40px;
 }
@@ -740,7 +740,7 @@ visibility: hidden;
   width:450px;
   flex-direction: column;
   padding:10px 0 0 0;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 .contact-method{
   margin-top:10px;
