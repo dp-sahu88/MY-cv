@@ -442,7 +442,7 @@ visibility: hidden;
   margin: 8px 10px;
   }
   .page1 .page-right{
-    margin-top:20px;
+    margin-top:0;
   }
 }
 
@@ -628,9 +628,12 @@ visibility: hidden;
   .page4 .page-right {
     height: 28vh;
     width: 85vw;
-    margin:6px;
+    margin:4px;
     display:flex;
     flex-direction: row;
+  }
+  .page4 .page-right{
+    margin-bottom: 10px;
   }
   .page4 .description{
     padding:8px
@@ -737,7 +740,7 @@ visibility: hidden;
   width:450px;
   flex-direction: column;
   padding:10px 0 0 0;
-  margin-bottom: 3rem;
+  margin-bottom: 60px;
 }
 .contact-method{
   margin-top:10px;
