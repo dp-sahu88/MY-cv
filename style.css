@@ -626,9 +626,9 @@ visibility: hidden;
 @media(max-width:900px){
   .page4 .page-left,
   .page4 .page-right {
-    height: 30vh;
+    height: 28vh;
     width: 85vw;
-    margin:10px;
+    margin:6px;
     display:flex;
     flex-direction: row;
   }
@@ -644,8 +644,9 @@ visibility: hidden;
     line-height:1.2rem
   }
   .page4 .description a{
-    padding:3px;
+    padding:1px 2px;
     font-size:0.7rem;
+    line-height:0.7rem;
   }
 }
 
@@ -733,8 +734,10 @@ visibility: hidden;
 }
 @media (max-width: 900px){
 #contacts .page-left{
+  width:450px;
   flex-direction: column;
   padding:10px 0 0 0;
+  margin-bottom: 3rem;
 }
 .contact-method{
   margin-top:10px;
@@ -742,6 +745,9 @@ visibility: hidden;
   padding: 5px;
   box-shadow: none;
   background:transparent;
+}
+#contacts .page-left form{
+  width:100%;
 }
 #contacts .page-left form input[type="text"],
 #contacts .page-left form input[type="email"]{
